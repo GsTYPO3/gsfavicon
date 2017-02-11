@@ -12,13 +12,13 @@ Links
 -----
 
 :TER:
-	https://typo3.org/extensions/repository/view/<extension key>
+	https://typo3.org/extensions/repository/view/gsfavicon
 
 :Bug Tracker:
-	https://forge.typo3.org/projects/extension-<extension key>/issues
+	https://forge.typo3.org/projects/extension-gsfavicon/issues
 
 :Git Repository:
-	https://github.com/<username>/<extension key>
+	https://github.com/gilbertsoft/gsfavicon
 
 :Contact:
 	`@<username> <https://twitter.com/your-username>`__
