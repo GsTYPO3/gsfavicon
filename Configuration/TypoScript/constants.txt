@@ -1,0 +1,10 @@
+gilbertsoft {
+  gsfavicon {
+    # cat=GS Favicon/150/101; type=string; label=Path:Path to the favicons if you don't place them in your root (with an ending slash!)
+    path =
+    # cat=GS Favicon/150/102; type=color; label=msapplication-TileColor:msapplication-TileColor.
+    msapplication-TileColor = #ffffff
+    # cat=GS Favicon/150/103; type=color; label=theme-color:theme-color.
+    theme-color = #ffffff
+  }
+}

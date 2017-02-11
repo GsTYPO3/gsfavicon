@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "GS Favicon allows you to use favicons generated at http:\/\/www.favicon-generator.org\/ with the Bootstrap Package.",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2.9-7.99.99\nbootstrap_package => 6.2.9-7.99.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "0.0.1"
+        },
+        "extensionKey": "gsfavicon",
+        "name": "GS Favicon for Bootstrap Package",
+        "originalExtensionKey": "gsfavicon",
+        "originalVendorName": "Gilbertsoft",
+        "persons": [
+            {
+                "company": "Gilbertsoft",
+                "email": "typo3@gilbertsoft.org",
+                "name": "Simon Gilli",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Gilbertsoft"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-04-11 04:26",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}
