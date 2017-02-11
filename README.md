@@ -1,5 +1,5 @@
 <a href="http://gilbertsoft.org/">
-    <img src="http://gilbertsoft.org/fileadmin/images/gilbertsoft.png" alt="Gilbertsoft logo" title="Gilbertsoft" align="right" height="60" />
+    <img src="http://gilbertsoft.org/fileadmin/images/gilbertsoft.png" alt="Gilbertsoft logo" title="Gilbertsoft" align="right" height="53" width="243" />
 </a>
 
 GS Favicon TYPO3 extension
