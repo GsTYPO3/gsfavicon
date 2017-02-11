@@ -7,5 +7,5 @@ GS Favicon TYPO3 extension
 
 GS Favicon allows you to use favicons generated at http://www.favicon-generator.org/ with TYPO3 and the Bootstrap Package.
 
-[![HTML source](https://github.com/gilbertsoft/gsfavicon/Documentation/Images/HtmlSource.png)]
-[![Constant Editor](https://github.com/gilbertsoft/gsfavicon/Documentation/Images/UserManual/ConstantEditor.png)]
+[![HTML source](https://github.com/gilbertsoft/gsfavicon/blob/master/Documentation/Images/HtmlSource.png)]
+[![Constant Editor](https://github.com/gilbertsoft/gsfavicon/blob/master/Documentation/Images/UserManual/ConstantEditor.png)]
