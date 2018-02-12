@@ -1,3 +1,12 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
 page {
   shortcutIcon = {$gilbertsoft.gsfavicon.path}favicon.ico
   headerData {
@@ -24,5 +33,5 @@ page {
   }
 }
 
-popup.shortcutIcon < page.shortcutIcon
-popup.headerData.90 < page.headerData.90
+#popup.shortcutIcon < page.shortcutIcon
+#popup.headerData.90 < page.headerData.90

@@ -1,3 +1,8 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
 gilbertsoft {
   gsfavicon {
     # cat=GS Favicon/150/101; type=string; label=Path:Path to the favicons if you don't place them in your root (with an ending slash!)
@@ -8,3 +13,9 @@ gilbertsoft {
     theme-color = #ffffff
   }
 }
+
+
+#########################################
+### REMOVE BOOTSTRAP FAVICON CONSTANT ###
+#########################################
+page.favicon >
