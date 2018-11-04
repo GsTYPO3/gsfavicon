@@ -9,8 +9,8 @@
 		"issues": "https://github.com/gilbertsoft/typo3-gsfavicon/issues"
 	},
 	"require": {
-		"typo3/cms-core": "^8.7.0 || ^9",
-		"bk2k/bootstrap-package": "^9.0.0"
+		"typo3/cms-core": "^8.7 || ^9.5",
+		"bk2k/bootstrap-package": "^9.0 || ^10.0"
 	},
 	"autoload": {
 		"psr-4": {
