@@ -32,6 +32,3 @@ page {
     )
   }
 }
-
-#popup.shortcutIcon < page.shortcutIcon
-#popup.headerData.90 < page.headerData.90
