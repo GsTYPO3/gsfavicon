@@ -3,7 +3,7 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 
-gilbertsoft {
+plugin {
   gsfavicon {
     # cat=GS Favicon/150/101; type=string; label=Path:Path to the favicons if you don't place them in your root (with an ending slash!)
     path =
