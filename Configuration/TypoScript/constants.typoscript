@@ -5,7 +5,7 @@
 
 plugin {
   gsfavicon {
-    # cat=GS Favicon/150/101; type=string; label=Path:Path to the favicons if you don't place them in your root (with an ending slash!)
+    # cat=GS Favicon/150/101; type=string; label=Path:Path to the favicons if you don't place them in your root (with an ending slash!) E. g. EXT:yoursitepackage/Resources/Public/Icons/
     path =
     # cat=GS Favicon/150/102; type=color; label=msapplication-TileColor:msapplication-TileColor.
     msapplication-TileColor = #ffffff

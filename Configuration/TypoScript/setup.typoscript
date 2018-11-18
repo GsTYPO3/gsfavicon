@@ -4,31 +4,201 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
 
+
+lib.gsfavicon {
+  imageRes = IMG_RESOURCE
+  imageRes {
+    stdWrap.prepend = TEXT
+    stdWrap.prepend.char = 10
+  }
+  text = TEXT
+  text {
+    stdWrap.prepend = TEXT
+    stdWrap.prepend.char = 10
+  }
+}
+
+
+
 ##############
 #### PAGE ####
 ##############
 page {
   shortcutIcon = {$plugin.gsfavicon.path}favicon.ico
   headerData {
-    1541516054 = TEXT
-    1541516054.value (
-<link rel="apple-touch-icon" sizes="57x57" href="/{$plugin.gsfavicon.path}apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/{$plugin.gsfavicon.path}apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/{$plugin.gsfavicon.path}apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/{$plugin.gsfavicon.path}apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/{$plugin.gsfavicon.path}apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/{$plugin.gsfavicon.path}apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/{$plugin.gsfavicon.path}apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/{$plugin.gsfavicon.path}apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/{$plugin.gsfavicon.path}apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/{$plugin.gsfavicon.path}android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/{$plugin.gsfavicon.path}favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/{$plugin.gsfavicon.path}favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/{$plugin.gsfavicon.path}favicon-16x16.png">
-<link rel="manifest" href="/{$plugin.gsfavicon.path}manifest.json">
-<meta name="msapplication-TileColor" content="{$plugin.gsfavicon.msapplication-TileColor}">
-<meta name="msapplication-TileImage" content="/{$plugin.gsfavicon.path}ms-icon-144x144.png">
-<meta name="theme-color" content="{$plugin.gsfavicon.theme-color}">
-    )
+    1541516054 = COA
+    1541516054 {
+      # Start comment
+      1 < lib.gsfavicon.text
+      1.value = <!-- gsfavicon begin -->
+
+      # End comment
+      100 < lib.gsfavicon.text
+      100.value = <!-- gsfavicon end -->
+
+      # iOS (iPhone and iPad)
+      10 = COA
+      10 {
+        1 < lib.gsfavicon.imageRes
+        1.file = {$plugin.gsfavicon.path}apple-icon-57x57.png
+        1.stdWrap.wrap = <link rel="apple-touch-icon" sizes="57x57" href="|">
+        1.stdWrap.append = 13
+        2 < lib.gsfavicon.imageRes
+        2.file = {$plugin.gsfavicon.path}apple-icon-60x60.png
+        2.stdWrap.wrap = <link rel="apple-touch-icon" sizes="60x60" href="|">
+        3 < lib.gsfavicon.imageRes
+        3.file = {$plugin.gsfavicon.path}apple-icon-72x72.png
+        3.stdWrap.wrap = <link rel="apple-touch-icon" sizes="72x72" href="|">
+        4 < lib.gsfavicon.imageRes
+        4.file = {$plugin.gsfavicon.path}apple-icon-76x76.png
+        4.stdWrap.wrap = <link rel="apple-touch-icon" sizes="76x76" href="|">
+        5 < lib.gsfavicon.imageRes
+        5.file = {$plugin.gsfavicon.path}apple-icon-114x114.png
+        5.stdWrap.wrap = <link rel="apple-touch-icon" sizes="114x114" href="|">
+        6 < lib.gsfavicon.imageRes
+        6.file = {$plugin.gsfavicon.path}apple-icon-120x120.png
+        6.stdWrap.wrap = <link rel="apple-touch-icon" sizes="120x120" href="|">
+        7 < lib.gsfavicon.imageRes
+        7.file = {$plugin.gsfavicon.path}apple-icon-144x144.png
+        7.stdWrap.wrap = <link rel="apple-touch-icon" sizes="144x144" href="|">
+        8 < lib.gsfavicon.imageRes
+        8.file = {$plugin.gsfavicon.path}apple-icon-152x152.png
+        8.stdWrap.wrap = <link rel="apple-touch-icon" sizes="152x152" href="|">
+        9 < lib.gsfavicon.imageRes
+        9.file = {$plugin.gsfavicon.path}apple-icon-180x180.png
+        9.stdWrap.wrap = <link rel="apple-touch-icon" sizes="180x180" href="|">
+      }
+
+      # Android
+      20 = COA
+      20 {
+        # icons
+        1 < lib.gsfavicon.imageRes
+        1.file = {$plugin.gsfavicon.path}android-icon-192x192.png
+        1.stdWrap.wrap = <link rel="icon" type="image/png" sizes="192x192" href="|">
+        2 < lib.gsfavicon.imageRes
+        2.file = {$plugin.gsfavicon.path}favicon-32x32.png
+        2.stdWrap.wrap = <link rel="icon" type="image/png" sizes="32x32" href="|">
+        3 < lib.gsfavicon.imageRes
+        3.file = {$plugin.gsfavicon.path}favicon-96x96.png
+        3.stdWrap.wrap = <link rel="icon" type="image/png" sizes="96x96" href="|">
+        4 < lib.gsfavicon.imageRes
+        4.file = {$plugin.gsfavicon.path}favicon-16x16.png
+        4.stdWrap.wrap = <link rel="icon" type="image/png" sizes="16x16" href="|">
+
+        # manifest.json
+        10 < lib.gsfavicon.text
+        #10.stdWrap.data = path:{$plugin.gsfavicon.path}manifest.json
+        #10.stdWrap.dataWrap = <link rel="manifest" href="|">
+        10.value = <link rel="manifest" href="?type=1541516054">
+      }
+
+      # Microsoft
+      30 = COA
+      30 {
+        # icon
+        1 < lib.gsfavicon.imageRes
+        1.file = {$plugin.gsfavicon.path}ms-icon-144x144.png
+        1.stdWrap.wrap = <meta name="msapplication-TileImage" content="|">
+
+        # colors
+        2 < lib.gsfavicon.text
+        2.value = <meta name="msapplication-TileColor" content="{$plugin.gsfavicon.msapplication-TileColor}">
+        3 < lib.gsfavicon.text
+        3.value = <meta name="theme-color" content="{$plugin.gsfavicon.theme-color}">
+      }
+    }
+  }
+  #meta {
+  #  msapplication-TileColor = {$plugin.gsfavicon.msapplication-TileColor}
+  #  msapplication-TileImage = {$plugin.gsfavicon.path}ms-icon-144x144.png
+  #  theme-color = {$plugin.gsfavicon.theme-color}
+  #}
+}
+
+gsfaviconManifest = PAGE
+gsfaviconManifest {
+  typeNum = 1541516054
+  headerData >
+  config {
+    no_cache = 1
+    disableAllHeaderCode = 1
+    additionalHeaders.10.header = Content-Type: text/plain
+    additionalHeaders.10.replace = 1
+    debug = 0
+  }
+  10 = LOAD_REGISTER
+  10 {
+    faviconPath.cObject = COA
+    faviconPath.cObject {
+      10 = TEXT
+      10.stdWrap.data = path:{$plugin.gsfavicon.path}
+
+      # Replace / by \/
+      stdWrap.replacement {
+        10 {
+          search = /
+          replace = \/
+        }
+      }
+    }
+  }
+  20 = COA
+  20 {
+    # Replace ###FAVICONPATH###
+    stdWrap.replacement {
+      10 {
+        search = ###FAVICONPATH###
+        replace.data = register:faviconPath
+      }
+    }
+
+    # JSON output
+    10 = TEXT
+    10 {
+      value (
+{
+ "name": "App",
+ "icons": [
+  {
+   "src": "###FAVICONPATH###android-icon-36x36.png",
+   "sizes": "36x36",
+   "type": "image\/png",
+   "density": "0.75"
+  },
+  {
+   "src": "###FAVICONPATH###android-icon-48x48.png",
+   "sizes": "48x48",
+   "type": "image\/png",
+   "density": "1.0"
+  },
+  {
+   "src": "###FAVICONPATH###android-icon-72x72.png",
+   "sizes": "72x72",
+   "type": "image\/png",
+   "density": "1.5"
+  },
+  {
+   "src": "###FAVICONPATH###android-icon-96x96.png",
+   "sizes": "96x96",
+   "type": "image\/png",
+   "density": "2.0"
+  },
+  {
+   "src": "###FAVICONPATH###android-icon-144x144.png",
+   "sizes": "144x144",
+   "type": "image\/png",
+   "density": "3.0"
+  },
+  {
+   "src": "###FAVICONPATH###android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}
+      )
+    }
   }
 }
