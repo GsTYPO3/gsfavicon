@@ -10,7 +10,7 @@
 	},
 	"require": {
 		"typo3/cms-core": "^8.7 || ^9.5",
-		"bk2k/bootstrap-package": "^9.0 || ^10.0"
+		"bk2k/bootstrap-package": "^9.0 || ^10.0 || dev-BP_10-0"
 	},
 	"autoload": {
 		"psr-4": {
